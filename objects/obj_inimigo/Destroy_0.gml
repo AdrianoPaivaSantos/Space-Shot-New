@@ -8,3 +8,7 @@ if (instance_exists(obj_controle))
 	}
 	
 	dropa_item(chance)
+	
+//Criando o Screen Shake
+var screenshake = instance_create_layer(0,0,layer,obj_screen_shake);
+screenshake.shake = 10;

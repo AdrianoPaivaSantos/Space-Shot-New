@@ -27,6 +27,7 @@
     {"id":{"name":"spr_tiro_player","path":"sprites/spr_tiro_player/spr_tiro_player.yy",},"order":1,},
     {"id":{"name":"spr_fundo_extra1","path":"sprites/spr_fundo_extra1/spr_fundo_extra1.yy",},"order":3,},
     {"id":{"name":"spr_fundo_extra2","path":"sprites/spr_fundo_extra2/spr_fundo_extra2.yy",},"order":4,},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
     {"id":{"name":"spr_explosao_player","path":"sprites/spr_explosao_player/spr_explosao_player.yy",},"order":0,},
     {"id":{"name":"spr_brilho_tiro1","path":"sprites/spr_brilho_tiro1/spr_brilho_tiro1.yy",},"order":5,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":2,},

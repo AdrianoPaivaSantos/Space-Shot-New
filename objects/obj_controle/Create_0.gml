@@ -1,4 +1,7 @@
 /// @description Insert description here
+//Randomizando o jogo
+randomize();
+
 //Iniciando
 alarm[0]= room_speed;
 

@@ -23,8 +23,11 @@ x+=(right-left)*velocidade;
 
 atirando();
 
-if(vida<0)
-{
-	instance_destroy();	
-}
+//Impedindo o player de sair da tela
+
+
+x=clamp(x,64,1856);
+y=clamp(y,64,1024);
+
+
 

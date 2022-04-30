@@ -103,5 +103,14 @@ level_up = function(_chance)
 ///@method perde_vida();
 perde_vida = function()
 {
+if(vida>0)
+	{
 	vida--;
+	screenshake(5);
+	}
+else
+	{
+	instance_destroy();
+	screenshake(25);
+	}
 }
