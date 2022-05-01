@@ -8,12 +8,13 @@ alarm[0]= room_speed;
 //Iniciando o sistema de pontos
 pontos=0;
 //Iniciando sistema de level
-level=1;
+level=10;
 proximo_level=100;
 
 //Variável de controle para o game over
 gameover_seq = noone;
-
+criar_boss=true;
+level_completo=false;
 
 //Criando um método para ganhar pontos
 ///@method ganha_pontos(pontos)

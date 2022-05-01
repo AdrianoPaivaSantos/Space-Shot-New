@@ -7,9 +7,19 @@ if(!instance_exists(obj_inimigo))
 {
 	var repetir=5*level;
 	//cria inimigos se ele não existem
-	repeat(repetir)
+	if(level<10)
 	{
-	cria_inimigo();	
+		repeat(repetir)
+		{
+		cria_inimigo();	
+		}
+	}
+	else
+	{ //Se eu posso criar o boss cria o boss
+		if(criar_boss==true)
+		//Cria o boss
+		layer_sequence_create("boss_entrada",960,574,seq_entrada_boss);	
+		criar_boss=false;
 	}
 }
 
