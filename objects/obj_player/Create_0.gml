@@ -79,13 +79,22 @@ level_up = function(_chance)
 			{
 			level_tiro++;
 			}
+			else
+			{
+				ganhando_pontos(100);
+			}		
+				
 	}
 		//Diminuindo o intervalo do tiro se o intervalo for maior que 20
 		else if (_chance>=45)
 		{
-			if(espera_tiro>20)
+			if(espera_tiro>15)
 			{
 			espera_tiro*=0.9;
+			}
+			else
+			{
+				ganhando_pontos(10);
 			}
 		}
 		//Aumentando a velocidade em 0.5 se for menor que 10
@@ -94,6 +103,10 @@ level_up = function(_chance)
 			if(velocidade<10)
 			{
 			velocidade+=.5;
+			}
+			else
+			{
+				ganhando_pontos(10);	
 			}
 		}
 

@@ -6,3 +6,12 @@ function screenshake(_shake)
 	var screen = instance_create_layer(0,0, "Escudo",obj_screen_shake)
 	screen.shake=_shake;
 }
+
+//Fazendo função Ganhando_pontos(_pontos)
+function ganhando_pontos(_pontos)
+{
+	if(instance_exists(obj_controle))
+	{
+		obj_controle.ganha_pontos(_pontos);	
+	}
+}
