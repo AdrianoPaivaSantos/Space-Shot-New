@@ -9,6 +9,7 @@ level_tiro = 1;
 //SISTEMA DE VIDA
 vida = 3;
 escudos = 3;
+meu_escudo=noone;
 
 atirando = function()
 {
@@ -116,14 +117,32 @@ level_up = function(_chance)
 ///@method perde_vida();
 perde_vida = function()
 {
-if(vida>0)
+	//Só vou perder vida se meu escudo é igual a noone
+	if(!meu_escudo)
 	{
-	vida--;
-	screenshake(5);
-	}
-else
+	if(vida>0)
+		{
+		vida--;
+		screenshake(5);
+		}
+	else
+		{
+		instance_destroy();
+		screenshake(25);
+		}
+	}	
+}
+///@method cria_escudo
+cria_escudo = function()
+{
+	var shield = keyboard_check_pressed(ord("E"));
+	if (shield && escudos>0 && meu_escudo==noone)
 	{
-	instance_destroy();
-	screenshake(25);
+		var escudo = instance_create_layer(x,y,"Escudo",obj_shield)	
+		escudo.alvo= id;
+		//Avisando que esse escudo é o meu escudo
+		meu_escudo=escudo;
+		//Diminuindo a quantidade de escudos
+		escudos--;
 	}
 }

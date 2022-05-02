@@ -12,3 +12,6 @@ if (instance_exists(obj_controle))
 //Criando o Screen Shake
 var screenshake = instance_create_layer(0,0,layer,obj_screen_shake);
 screenshake.shake = 10;
+
+//Aumentando o total de inimigos mortos
+global.total_inimigos++;

@@ -13,7 +13,8 @@ proximo_level=100;
 
 //Variável de controle para o game over
 gameover_seq = noone;
-
+criar_boss=true;
+level_completo=false;
 
 //Criando um método para ganhar pontos
 ///@method ganha_pontos(pontos)

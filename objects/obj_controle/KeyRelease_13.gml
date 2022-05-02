@@ -1,5 +1,13 @@
 /// @description Insert description here
 if(gameover_seq)
 {
-	room_restart();
+	//Criando o objeto transição com o destino da room inicial
+	var _transicao = instance_create_layer(0, 0, "player", obj_transicao);
+	_transicao.destino=rm_inicio;
+	
+	//Checando se os pontos sao maiores que a pontuação
+	if(pontos>global.max_pontos)
+	{
+		global.max_pontos=pontos;	
+	}
 }
