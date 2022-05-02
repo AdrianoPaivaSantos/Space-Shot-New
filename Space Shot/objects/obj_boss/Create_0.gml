@@ -13,7 +13,7 @@ delay_estado = room_speed*15;
 espera_estado = delay_estado;
 velocidade_horizontal = -3;
 vida_max = 1500;
-vida_atual =1;//vida_max;
+vida_atual =vida_max;
 
 //Criei monions
 cria_minions=true;

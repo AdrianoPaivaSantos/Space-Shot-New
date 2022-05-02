@@ -8,7 +8,7 @@ alarm[0]= room_speed;
 //Iniciando o sistema de pontos
 pontos=0;
 //Iniciando sistema de level
-level=10;
+level=1;
 proximo_level=100;
 
 //Variável de controle para o game over

@@ -6,20 +6,24 @@
   "playbackSpeedType": 0,
   "autoRecord": true,
   "volume": 1.0,
-  "length": 80.0,
+  "length": 100.0,
   "events": {
     "Keyframes": [],
     "resourceVersion": "1.0",
     "resourceType": "KeyframeStore<MessageEventKeyframe>",
   },
   "moments": {
-    "Keyframes": [],
+    "Keyframes": [
+      {"id":"a8a25c88-9b32-4ed5-9105-1f1055f277c6","Key":99.9998,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+              "cria_transicao",
+            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
+    ],
     "resourceVersion": "1.0",
     "resourceType": "KeyframeStore<MomentsEventKeyframe>",
   },
   "tracks": [
     {"keyframes":{"Keyframes":[
-          {"id":"69a56df6-5169-411e-9087-a8cdfd621670","Key":0.0,"Length":70.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"resourceVersion":"1.0","resourceType":"AssetSpriteKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetSpriteKeyframe>",},
+          {"id":"69a56df6-5169-411e-9087-a8cdfd621670","Key":0.0,"Length":100.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"resourceVersion":"1.0","resourceType":"AssetSpriteKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetSpriteKeyframe>",},
         ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AssetSpriteKeyframe>",},"trackColour":4282970770,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
         {"keyframes":{"Keyframes":[
               {"id":"b66b647c-8cdb-4af2-8437-06c8b3aed524","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":true,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},"1":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},
@@ -39,7 +43,7 @@
   ],
   "visibleRange": {
     "x": 0.0,
-    "y": 70.0,
+    "y": 99.9999,
   },
   "lockOrigin": false,
   "showBackdrop": true,

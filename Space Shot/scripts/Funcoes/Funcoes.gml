@@ -41,3 +41,8 @@ function cria_seq()
 
 //Impedindo que o control execute a tela de game over
 
+function cria_transicao()
+{
+	var _transicao = instance_create_layer(0, 0, "player",obj_transicao);
+	_transicao.destino=rm_inicio;
+}

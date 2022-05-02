@@ -12,6 +12,7 @@ muda_estado();
 //Iniciando o estado 1
 if(estado_atual=="estado 1")
 {
+	//códigos estado 1
 	estado_01();
 }
 
