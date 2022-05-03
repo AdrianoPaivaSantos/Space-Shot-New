@@ -3,7 +3,7 @@
 vspeed=2;
 
 //Chance de dropar item = 20%
-chance=20;
+chance=22;
 pontos=10;
 alarm[0] = random_range(1,3)*room_speed;
 

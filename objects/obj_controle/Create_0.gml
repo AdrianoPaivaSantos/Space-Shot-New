@@ -3,15 +3,11 @@
 randomize();
 
 
-
-
-
-
 //Iniciando
 alarm[0]= room_speed;
 
 //Iniciando o sistema de pontos
-pontos=0;
+global.pontos=0;
 //Iniciando sistema de level
 level=1;
 proximo_level=100;
@@ -25,9 +21,9 @@ level_completo=false;
 ///@method ganha_pontos(pontos)
 ganha_pontos = function(_pontos)
 	{
-		pontos+=_pontos*level;
+		global.pontos+=_pontos*level;
 		
-		if(pontos > proximo_level)
+		if(global.pontos > proximo_level)
 		{
 			level++;
 			proximo_level*=2;
