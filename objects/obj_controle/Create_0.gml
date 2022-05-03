@@ -6,7 +6,7 @@ randomize();
 alarm[0]= room_speed;
 
 //Iniciando o sistema de pontos
-pontos=0;
+pontos=1;
 //Iniciando sistema de level
 level=1;
 proximo_level=100;

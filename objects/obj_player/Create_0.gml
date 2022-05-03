@@ -31,12 +31,12 @@ atirando = function()
 			var tiro_2 = instance_create_layer(x+60,y_tiro+10,"Tiro",obj_tiro2_player);
 			tiro_2.hspeed = 5;
 		}
-		else if (level_tiro == 3)
+		else if (level_tiro == 4)
 		{
 			instance_create_layer(x,y_tiro,"Tiro",obj_tiro_player);
 			tiro2();
 		}
-		else if (level_tiro == 4)
+		else if (level_tiro == 3)
 		{
 			tiro4();	
 		}

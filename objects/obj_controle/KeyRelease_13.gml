@@ -6,8 +6,5 @@ if(gameover_seq)
 	_transicao.destino=rm_inicio;
 	
 	//Checando se os pontos sao maiores que a pontuação
-	if(pontos>global.max_pontos)
-	{
-		global.max_pontos=pontos;	
-	}
+	
 }
