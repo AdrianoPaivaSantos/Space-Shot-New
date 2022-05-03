@@ -17,9 +17,14 @@ if(!instance_exists(obj_inimigo))
 	else
 	{ //Se eu posso criar o boss cria o boss
 		if(criar_boss==true)
+	{
 		//Cria o boss
 		layer_sequence_create("boss_entrada",960,574,seq_entrada_boss);	
 		criar_boss=false;
+		
+		//parando de tocar a musica
+		audio_stop_all();
+	}
 	}
 }
 

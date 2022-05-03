@@ -10,3 +10,4 @@ brilho = spr_brilho_tiro1;
 
 
 cores = choose (c_aqua,c_green,c_yellow,c_olive,);
+

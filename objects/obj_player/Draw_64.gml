@@ -14,7 +14,7 @@ repeat(vida)
 //1º = 40 + 20 * 0 = 40
 //2º = 40 + 20 * 1 = 60
 //3º = 40 + 20 * 2 = 80
-	draw_sprite_ext(spr_player,0,40+ espaco*multiplicador,40,0.3,0.3,0,c_white,0.5);
+	draw_sprite_ext(spr_player,0,40+ espaco*multiplicador,80,0.3,0.3,0,c_white,0.5);
 //Depois de desenhar aumenta o valor do multiplicador
 	multiplicador++;
 }
@@ -26,7 +26,7 @@ repeat(escudos)
 //1º = 40 + 20 * 0 = 40
 //2º = 40 + 20 * 1 = 60
 //3º = 40 + 20 * 2 = 80
-	draw_sprite_ext(spr_shield,2,40 + espaco*multiplicador,100,0.3,0.3,0,c_white,0.5);
+	draw_sprite_ext(spr_shield,2,40 + espaco*multiplicador,130,0.3,0.3,0,c_white,0.5);
 //Depois de desenhar aumenta o valor do multiplicador
 	multiplicador++;
 }

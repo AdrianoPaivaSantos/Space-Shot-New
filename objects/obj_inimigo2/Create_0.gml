@@ -11,5 +11,7 @@ atirando=function()
 if (y>=0)
 	{
 	instance_create_layer(x,y+ sprite_height/3,"Tiro",obj_tiro_inimigo2);
+	//criando o som do tiro
+	audio_play_sound(sfx_laser1,1,false);
 	}
 }

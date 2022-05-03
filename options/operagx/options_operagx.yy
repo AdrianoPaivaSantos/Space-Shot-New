@@ -8,7 +8,7 @@
   "option_operagx_display_cursor": true,
   "option_operagx_guid": "ef074f2d-0b34-4a19-a3a0-b602ffda33fa",
   "option_operagx_team_name": "nirvano2022 studio",
-  "option_operagx_editUrl": "https://dc.gxc.gg/home/games/game/ef074f2d-0b34-4a19-a3a0-b602ffda33fa/edit",
+  "option_operagx_editUrl": "",
   "option_operagx_internalShareUrl": "",
   "option_operagx_publicShareUrl": "",
   "resourceVersion": "1.0",

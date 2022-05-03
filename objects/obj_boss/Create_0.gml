@@ -5,7 +5,7 @@ Estado 2 se movendo dando o tiro 1
 Estado 3 parado intercalando entre o tiro 1 e 2
 Estado 4 (especial) invunerável criando minions que curam o boss
 */
-
+audio_play_sound(snd_boss_fight,0,1);
 estado_atual = choose("estado 1","estado 2","estado 3");
 delay_tiro = room_speed/2;
 espera_tiro = 0;
@@ -21,7 +21,9 @@ cria_minions=true;
 //Criando Função do tiro 2
 tiro_02 = function()
 {
-	instance_create_layer(x,y+ 80,"Tiro",obj_tiro_inimigo2);	
+	instance_create_layer(x,y+ 80,"Tiro",obj_tiro_inimigo2);
+	//criando o som do tiro
+	audio_play_sound(sfx_laser1,1,false);
 }
 //Criando Função do tiro 1
 ///@method tiro 01 direita se true se false esquerda
@@ -36,6 +38,8 @@ tiro_01 = function(_direita)
 		var _posx = -160;	
 	}
 	instance_create_layer(x + _posx,y + 10,"Tiro",obj_tiro_inimigo);
+	//criando o som do tiro
+	audio_play_sound(sfx_laser1,1,false);
 }
 //Metodo do estado 1
 estado_01 = function()

@@ -19,6 +19,7 @@ atirando = function()
 	if (fire && alarm[0]==-1)
 	{
 	alarm[0]=espera_tiro;
+	audio_play_sound(sfx_laser2,1,false);
 		if (level_tiro == 1)
 		{
 			instance_create_layer(x,y_tiro,"Tiro",obj_tiro_player);
@@ -45,6 +46,7 @@ atirando = function()
 			tiro2();
 			tiro4();
 		}
+		
 	}
 }
 

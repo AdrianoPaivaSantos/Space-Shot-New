@@ -2,11 +2,16 @@
 //Randomizando o jogo
 randomize();
 
+
+
+
+
+
 //Iniciando
 alarm[0]= room_speed;
 
 //Iniciando o sistema de pontos
-pontos=1;
+pontos=0;
 //Iniciando sistema de level
 level=1;
 proximo_level=100;
