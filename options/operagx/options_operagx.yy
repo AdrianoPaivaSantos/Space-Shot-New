@@ -17,11 +17,11 @@
   "option_operagx_mod_team_id": "",
   "option_operagx_mod_team_name": "",
   "option_operagx_mod_version": "1.0.0.0",
-  "option_operagx_next_version": "0.0.0.6",
+  "option_operagx_next_version": "0.0.0.7",
   "option_operagx_publicShareUrl": "https://gx.games/games/34ukk9/space-war-challenge/",
   "option_operagx_scale": 0,
   "option_operagx_team_id": "783b7f0a-abf5-4c70-b9d6-1e38991e8c3f",
   "option_operagx_team_name": "AdrianoPaiva studio",
   "option_operagx_texture_page": "2048x2048",
-  "option_operagx_version": "0.0.0.5",
+  "option_operagx_version": "0.0.0.6",
 }

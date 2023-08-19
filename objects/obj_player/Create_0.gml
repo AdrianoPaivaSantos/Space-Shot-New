@@ -14,6 +14,7 @@ meu_escudo=noone;
 atirando = function()
 {
 	var fire = keyboard_check(vk_space)
+	
 	var y_tiro = y -sprite_height/3;
 	
 	if (fire && alarm[0]==-1)

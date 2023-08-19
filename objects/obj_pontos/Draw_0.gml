@@ -3,9 +3,10 @@
 //variavel temporaria para segurar o valor dos pontos
 var _pontos = round(global.pontos);
 draw_set_font(fnt_botoes);
-draw_text(722,280,"Maior Pontuação: " + string(_pontos));
-draw_text(722,380,"Inimigos mortos: " + string(global.total_inimigos));
-draw_text(722,480,"Total de mortes: " + string(global.total_mortes));
+draw_text(1370,40,"Highest Score : " + string(_pontos));
+draw_text(1370,100,"Dead Enemies : " + string(global.total_inimigos));
+draw_text(1370,160,"Total Deaths : " + string(global.total_mortes));
+
 draw_set_font(-1);
 
 //fazendo pontos chegar até o valor do max.pontos
