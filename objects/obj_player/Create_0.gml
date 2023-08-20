@@ -6,7 +6,7 @@ velh = 4;
 velv = 4;
 
 velocidade = 4;
-espera_tiro = room_speed;
+espera_tiro = 60;
 level_tiro = 1;
 //SISTEMA DE VIDA
 vida = 3;
@@ -15,13 +15,13 @@ meu_escudo=noone;
 
 atirando = function()
 {
-	var fire = keyboard_check(vk_space)
-	var _fire = ev_global_gesture_tap
+	//var fire = keyboard_check(vk_space)
+	var _fire = gesture_get_tap_count()
 	
 	
 	var y_tiro = y -sprite_height/3;
 	
-	if (fire && _fire && alarm[0]==-1)
+	if ( _fire && alarm[0]==-1)
 	{
 	alarm[0]=espera_tiro;
 	audio_play_sound(sfx_laser2,1,false);

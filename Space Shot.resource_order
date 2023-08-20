@@ -3,9 +3,9 @@
     {"name":"Botao","order":1,"path":"folders/Objects/Botao.yy",},
     {"name":"Etc","order":2,"path":"folders/Objects/Etc.yy",},
     {"name":"Inimigos","order":3,"path":"folders/Objects/Inimigos.yy",},
+    {"name":"Joystick","order":11,"path":"folders/Objects/Joystick.yy",},
     {"name":"Player","order":4,"path":"folders/Objects/Player.yy",},
     {"name":"Joystick","order":5,"path":"folders/Sprites/Joystick.yy",},
-    {"name":"Joystick","order":11,"path":"folders/Objects/Joystick.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_inimigo2","order":2,"path":"objects/obj_inimigo2/obj_inimigo2.yy",},
