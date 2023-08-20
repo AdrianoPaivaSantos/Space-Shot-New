@@ -3,8 +3,8 @@
 function screenshake(_shake)
 {
 	//criando o screenshake
-	var screen = instance_create_layer(0,0, "Escudo",obj_screen_shake)
-	screen.shake=_shake;
+	var _screen = instance_create_layer(0,0, "Escudo",obj_screen_shake)
+	_screen.shake=_shake;
 }
 
 //Fazendo função Ganhando_pontos(_pontos)
@@ -20,8 +20,8 @@ function ganhando_pontos(_pontos)
 function destroi_seq()
 {
 	//tentando pegar a sequencia da minha layer
-	var elementos = layer_get_all_elements("boss_entrada");
-	layer_sequence_destroy(elementos[0]);
+	var _elementos = layer_get_all_elements("boss_entrada");
+	layer_sequence_destroy(_elementos[0]);
 	instance_create_layer(960,288,"Boss",obj_boss);
 }
 //criando a sequencia do player

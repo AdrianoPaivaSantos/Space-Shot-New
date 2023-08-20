@@ -2,8 +2,10 @@
 // velocidade .05 - Limite = 10 chance 45%
 //espera_tiro 10% - Limite = 20 chance 45%
 //Level_tiro  1   - Limite = 5  chance 10%
+velh = 4;
+velv = 4;
 
-velocidade = 5;
+velocidade = 4;
 espera_tiro = room_speed;
 level_tiro = 1;
 //SISTEMA DE VIDA
@@ -104,8 +106,10 @@ level_up = function(_chance)
 		//Aumentando a velocidade em 0.5 se for menor que 10
 		else
 		{
-			if(velocidade<10)
+			if(velh<10&&velv<<10&&velocidade<10)
 			{
+			velh+=.5;
+			velv+=.5;
 			velocidade+=.5;
 			}
 			else

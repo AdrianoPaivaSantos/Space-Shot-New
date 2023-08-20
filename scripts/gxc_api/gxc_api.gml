@@ -17,31 +17,31 @@ function gxc_api() {}
 function gxc_get_query_param(key) {
 	
 	// Cached parameters static variable.
-	static _cachedParams = undefined;
+	static _cached_params = undefined;
 
 	// Auxiliar function to split key-value pairs.
-	static keyValueSplit = function(str, ch) {
+	static key_value_split = function(_str, _ch) {
 	
-		var idx = string_pos(ch, str);
+		var _idx = string_pos(_ch, _str);
   
-		if (idx = 0) return [str, true];
+		if (_idx = 0) return [_str, true];
 	
-		return [string_copy(str, 1, idx - 1), string_copy(str, idx + 1, string_length(str) - 1)];
+		return [string_copy(_str, 1, _idx - 1), string_copy(_str, _idx + 1, string_length(_str) - 1)];
 	}
 
 	// If cached parameters is 'undefined' populate it.
-	if (is_undefined(_cachedParams)) {
-		_cachedParams = {};
+	if (is_undefined(_cached_params)) {
+		_cached_params = {};
 		for (var i = 0; i < parameter_count(); ++i) {
 			
-			var _parameterStr = parameter_string(i);
-			var _keyValuePair = keyValueSplit(_parameterStr, "=");
+			var _parameter_str = parameter_string(i);
+			var _key_value_pair = key_value_split(_parameter_str, "=");
 			
-			_cachedParams[$ _keyValuePair[0]] = _keyValuePair[1];
+			_cached_params[$ _key_value_pair[0]] = _key_value_pair[1];
 		}
 	}
 	
-	return _cachedParams[$ key];
+	return _cached_params[$ key];
 }
 
 /// @function gxc_profile_get_info(callback)
@@ -55,7 +55,7 @@ function gxc_profile_get_info(_callback = undefined) {
 		throw "[ERROR] gxc_profile_get_info, param 'callback' must be of type method."
 	}
 
-	var _listener = _callback ? __gxc_callback_asyncListener : __gxc_event_asyncListener;
+	var _listener = _callback ? __gxc_callback_async_listener : __gxc_event_async_listener;
 	
 	// This is the profile URL
 	var _url = "https://api.gxc.gg/gg/profile";
