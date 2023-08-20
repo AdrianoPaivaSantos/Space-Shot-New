@@ -16,10 +16,12 @@ meu_escudo=noone;
 atirando = function()
 {
 	var fire = keyboard_check(vk_space)
+	var _fire = ev_global_gesture_tap
+	
 	
 	var y_tiro = y -sprite_height/3;
 	
-	if (fire && alarm[0]==-1)
+	if (fire && _fire && alarm[0]==-1)
 	{
 	alarm[0]=espera_tiro;
 	audio_play_sound(sfx_laser2,1,false);
